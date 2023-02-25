@@ -57,7 +57,7 @@ router.get("/fil,_category/:category_id", (req,res)=>{
     where category_id =$3
     `
 
-    pool.query(findQuery,[category_id], (err , response) =>{
+    pool.query(fgiindQuery,[category_id], (err , response) =>{
         if(err) throw err
     })
 })
