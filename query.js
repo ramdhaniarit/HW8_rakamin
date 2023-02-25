@@ -19,7 +19,7 @@ router.get("/film", (req, res) =>{
     console.log(response);
 })
 
-
+// film tertentu sesuai id
 router.get("/film/:id", (req, res) =>{
     const {id} = req.params;
 
@@ -36,7 +36,7 @@ router.get("/film/:id", (req, res) =>{
     })
 })
 
-
+// kategori film
 router.get("/film_category", (req,res) =>{
 
     const findQuery = `
@@ -50,7 +50,7 @@ router.get("/film_category", (req,res) =>{
     })
  
 })
-
+// id kategori film
 router.get("/fil,_category/:category_id", (req,res)=>{
     const findQuery =`
     SELECT * FROM film_category
